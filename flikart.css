@@ -1,0 +1,337 @@
+/* 1. Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+/* 2. Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+}
+
+
+.flex{
+    display: flex;
+
+}
+.navbar{
+    width: 100%;
+    padding: 10px 45px 10px 45px;
+    background-color: #2874f0;
+   
+
+}
+.from{
+padding-left: 25px;
+}
+.search{
+    width: 600px;
+    padding: 5px;
+    height: 40px;
+    margin-top: 3px;
+    outline: none;
+    border-radius: 6px;
+    border-color: black ;
+    border-width: 1px;
+    background-color:#ffffff ;
+    margin-right: 45px;
+}
+.login{
+    text-decoration: none;
+    color: #ffffff;
+}
+.login-container{
+    height: 41px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 15px;
+}
+.span{
+
+    font-size: 18px;
+}
+.login-container:hover{
+   
+    background-color: #ffffff;
+    .span{
+        color: #2874f0;
+        font-size: 18px;
+    }
+    
+    .logicon{
+        color: #2874f0;
+        font-size: 18px;
+    }
+}
+.options-container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+
+/* Popup Dialog CSS */
+.popup-dialog {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align the top of the popup to the bottom of the icon */
+    left: 0;
+    width: 250px; /* Adjust width as needed */
+    padding:8px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.menu-icon:hover .popup-dialog {
+    display: block;
+}
+
+/* Optional styling for the popup content */
+.popup-dialog ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pop-unorder-list-container{
+    list-style-type: none;
+}
+.popup-dialog ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.popup-dialog ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.pop-items{
+    color: #000000;
+    font-size: 14px;
+    text-align: start;
+}
+.pop-names{
+   padding-left: 15px;
+}
+
+/* flipkart body container css*/
+
+.categorymenu{
+   list-style-type: none;
+   display: flex;
+   
+}
+.categorymenu-flex-container{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+
+}
+.categoryName{
+    font-size: 18px;
+
+}
+
+/* Base styling for category menu */
+.categorymenu {
+    list-style: none;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+.category-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.categorymenu-flex-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.categorymenu-flex-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.categoryName {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the category item */
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.submenu h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.submenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-list li {
+    padding: 8px 0;
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.submenu-list li a:hover {
+    color: #007bff;
+}
+
+/* Show submenu on hover */
+.category-item:hover .submenu {
+    display: block;
+}
+.category-icons{
+    height: 126px;
+    width: 122px;
+}
+
+#carousel-button{
+    background-color: #ffffff;
+}
+/* carousel-item */
+.banner {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.product {
+    text-align: center;
+    padding: 20px;
+    border: 0.5px solid #ccc;
+    margin-right: 15px;
+    
+}
+.anchor{
+    text-decoration: none;
+}
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.banner-heading {
+    font-family: 'Arial', sans-serif; /* Custom font */
+    text-transform: proper; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 5px;
+    color: #000000;
+}
+p{
+    color: #000000;
+}
+
+/* footer */
+
+.footer-section {
+    background-color:  #273746 ;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex:   
+ 1;
+    margin-bottom: 20px;
+}
+
+.footer-headings {
+    margin-bottom: 10px;
+    color:#aab7b8 ;
+    font-size: 18px;
+}
+
+.footer-ul-list-items {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+.footer-list-items {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.footer-list-items {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.payment-icons-img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer-paragraph {
+    text-align: center;
+    margin-top: 10px;
+    color: #f4f4f4;
+}
